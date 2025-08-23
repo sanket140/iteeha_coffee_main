@@ -33,20 +33,27 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <button 
-                onClick={() => scrollToSection('home')}
+              <a 
+                href="/"
                 className="font-inter font-medium text-charcoal hover:text-coffee-brown transition-colors duration-300"
                 data-testid="nav-home"
               >
                 Home
-              </button>
-              <button 
-                onClick={() => scrollToSection('story')}
+              </a>
+              <a 
+                href="/about"
                 className="font-inter font-medium text-charcoal hover:text-coffee-brown transition-colors duration-300"
-                data-testid="nav-story"
+                data-testid="nav-about"
               >
-                Our Story
-              </button>
+                About
+              </a>
+              <a 
+                href="/menu"
+                className="font-inter font-medium text-charcoal hover:text-coffee-brown transition-colors duration-300"
+                data-testid="nav-menu"
+              >
+                Menu
+              </a>
               <button 
                 onClick={() => scrollToSection('gallery')}
                 className="font-inter font-medium text-charcoal hover:text-coffee-brown transition-colors duration-300"
@@ -54,13 +61,13 @@ export default function Navigation() {
               >
                 Gallery
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <a 
+                href="/contact"
                 className="font-inter font-medium text-charcoal hover:text-coffee-brown transition-colors duration-300"
                 data-testid="nav-contact"
               >
                 Contact
-              </button>
+              </a>
               <a 
                 href="https://order.iteeha.coffee/" 
                 className="bg-coffee-brown text-white px-6 py-2 rounded-full font-medium hover:bg-coffee-dark transition-colors duration-300"
@@ -81,20 +88,30 @@ export default function Navigation() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col space-y-4 mt-8">
-                  <button 
-                    onClick={() => scrollToSection('home')}
+                  <a 
+                    href="/"
                     className="text-left px-3 py-2 text-charcoal hover:text-coffee-brown font-inter text-lg"
                     data-testid="mobile-nav-home"
+                    onClick={() => setIsOpen(false)}
                   >
                     Home
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('story')}
+                  </a>
+                  <a 
+                    href="/about"
                     className="text-left px-3 py-2 text-charcoal hover:text-coffee-brown font-inter text-lg"
-                    data-testid="mobile-nav-story"
+                    data-testid="mobile-nav-about"
+                    onClick={() => setIsOpen(false)}
                   >
-                    Our Story
-                  </button>
+                    About
+                  </a>
+                  <a 
+                    href="/menu"
+                    className="text-left px-3 py-2 text-charcoal hover:text-coffee-brown font-inter text-lg"
+                    data-testid="mobile-nav-menu"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Menu
+                  </a>
                   <button 
                     onClick={() => scrollToSection('gallery')}
                     className="text-left px-3 py-2 text-charcoal hover:text-coffee-brown font-inter text-lg"
@@ -102,13 +119,14 @@ export default function Navigation() {
                   >
                     Gallery
                   </button>
-                  <button 
-                    onClick={() => scrollToSection('contact')}
+                  <a 
+                    href="/contact"
                     className="text-left px-3 py-2 text-charcoal hover:text-coffee-brown font-inter text-lg"
                     data-testid="mobile-nav-contact"
+                    onClick={() => setIsOpen(false)}
                   >
                     Contact
-                  </button>
+                  </a>
                   <a 
                     href="https://order.iteeha.coffee/" 
                     className="mx-3 mt-4 bg-coffee-brown text-white px-4 py-3 rounded-full text-center font-medium block"

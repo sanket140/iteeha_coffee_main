@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroCarousel from "@/components/HeroCarousel";
 import StorySection from "@/components/StorySection";
+import MenuPreview from "@/components/MenuPreview";
 import GalleryGrid from "@/components/GalleryGrid";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <HeroCarousel />
       <StorySection />
+      <MenuPreview />
       <GalleryGrid />
       <ContactSection />
       <Footer />

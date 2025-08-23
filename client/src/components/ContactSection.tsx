@@ -20,11 +20,12 @@ export default function ContactSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <h3 className="font-inter font-semibold text-xl text-coffee-brown mb-3">Location</h3>
+            <h3 className="font-inter font-semibold text-xl text-coffee-brown mb-3">Locations</h3>
             <p className="text-charcoal">
-              Find us at our cozy locations<br />
-              across the city.<br />
-              Visit iteeha.coffee for details
+              Mahalaxmi • Lower Parel • Bandra West<br />
+              <a href="/contact" className="text-coffee-brown hover:text-coffee-gold transition-colors">
+                View all locations →
+              </a>
             </p>
           </div>
           
@@ -38,9 +39,9 @@ export default function ContactSection() {
             </div>
             <h3 className="font-inter font-semibold text-xl text-coffee-brown mb-3">Hours</h3>
             <p className="text-charcoal">
-              Monday - Friday: 7AM - 8PM<br />
-              Saturday - Sunday: 8AM - 9PM<br />
-              Holidays: 9AM - 6PM
+              7:30 AM - 11:30 PM<br />
+              All Days<br />
+              <span className="text-coffee-brown">Basic but Beautiful</span>
             </p>
           </div>
           
@@ -53,9 +54,10 @@ export default function ContactSection() {
             </div>
             <h3 className="font-inter font-semibold text-xl text-coffee-brown mb-3">Contact</h3>
             <p className="text-charcoal">
-              Get in touch with us<br />
-              for inquiries and orders.<br />
-              hello@iteeha.coffee
+              connect@iteeha.coffee<br />
+              <a href="/contact" className="text-coffee-brown hover:text-coffee-gold transition-colors">
+                Send us a message →
+              </a>
             </p>
           </div>
         </div>

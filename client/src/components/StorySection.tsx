@@ -18,6 +18,12 @@ export default function StorySection() {
             
             <div className="prose prose-lg max-w-none" data-testid="story-content">
               <p className="text-charcoal text-lg leading-relaxed mb-6">
+                As a cozy café in the heart of Mumbai, we are a quiet spot for you amidst the city's turmoil. 
+                With our thoughtfully curated range of coffees, bakes, artisanal teas, freshly cold-pressed 
+                juices and premium sandwiches, Iteeha Coffee is your space to unwind.
+              </p>
+              
+              <p className="text-charcoal text-lg leading-relaxed mb-6">
                 <span className="font-semibold text-coffee-brown">"Iteeha"</span> roughly translates to <em>'as per tradition'</em>, and keeping that in mind, we adopted the virtue of doing <strong>'Basic but Beautiful'</strong>. We offer light and simple products, but beautifully done.
               </p>
               
@@ -31,7 +37,7 @@ export default function StorySection() {
             </div>
             
             <a 
-              href="https://iteeha.coffee/about.html" 
+              href="/about" 
               className="inline-flex items-center bg-coffee-brown text-white px-6 py-3 rounded-full font-inter font-medium hover:bg-coffee-dark transition-all duration-300 transform hover:scale-105"
               data-testid="story-learn-more"
             >
