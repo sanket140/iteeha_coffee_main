@@ -70,13 +70,13 @@ export default function Footer() {
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('gallery')}
+                <a 
+                  href="/gallery"
                   className="text-coffee-cream/80 hover:text-coffee-gold transition-colors duration-300"
                   data-testid="footer-link-gallery"
                 >
                   Gallery
-                </button>
+                </a>
               </li>
               <li>
                 <a 
@@ -113,7 +113,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="https://order.iteeha.coffee/" 
+                  href="/order" 
                   className="text-coffee-cream/80 hover:text-coffee-gold transition-colors duration-300"
                   data-testid="footer-link-order"
                 >

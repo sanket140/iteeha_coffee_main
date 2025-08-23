@@ -54,13 +54,13 @@ export default function Navigation() {
               >
                 Menu
               </a>
-              <button 
-                onClick={() => scrollToSection('gallery')}
+              <a 
+                href="/gallery"
                 className="font-inter font-medium text-charcoal hover:text-coffee-brown transition-colors duration-300"
                 data-testid="nav-gallery"
               >
                 Gallery
-              </button>
+              </a>
               <a 
                 href="/contact"
                 className="font-inter font-medium text-charcoal hover:text-coffee-brown transition-colors duration-300"
@@ -69,7 +69,7 @@ export default function Navigation() {
                 Contact
               </a>
               <a 
-                href="https://order.iteeha.coffee/" 
+                href="/order" 
                 className="bg-coffee-brown text-white px-6 py-2 rounded-full font-medium hover:bg-coffee-dark transition-colors duration-300"
                 data-testid="nav-order-now"
               >
@@ -112,13 +112,14 @@ export default function Navigation() {
                   >
                     Menu
                   </a>
-                  <button 
-                    onClick={() => scrollToSection('gallery')}
+                  <a 
+                    href="/gallery"
                     className="text-left px-3 py-2 text-charcoal hover:text-coffee-brown font-inter text-lg"
                     data-testid="mobile-nav-gallery"
+                    onClick={() => setIsOpen(false)}
                   >
                     Gallery
-                  </button>
+                  </a>
                   <a 
                     href="/contact"
                     className="text-left px-3 py-2 text-charcoal hover:text-coffee-brown font-inter text-lg"
@@ -128,7 +129,7 @@ export default function Navigation() {
                     Contact
                   </a>
                   <a 
-                    href="https://order.iteeha.coffee/" 
+                    href="/order" 
                     className="mx-3 mt-4 bg-coffee-brown text-white px-4 py-3 rounded-full text-center font-medium block"
                     data-testid="mobile-nav-order-now"
                   >

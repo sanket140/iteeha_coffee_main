@@ -23,7 +23,7 @@ export default function Home() {
       
       {/* Floating Order Button */}
       <a 
-        href="https://order.iteeha.coffee/" 
+        href="/order" 
         className="fixed bottom-6 right-6 bg-coffee-gold text-white p-4 rounded-full shadow-lg hover:bg-coffee-brown transition-all duration-300 transform hover:scale-110 z-40 animate-float"
         data-testid="floating-order-button"
       >
