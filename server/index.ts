@@ -62,10 +62,11 @@ app.use((req, res, next) => {
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || '5000', 10);
   server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
-  });
+  port,
+  host: "127.0.0.1",   // or "0.0.0.0" if you want external access
+  // remove reusePort (not supported on Windows)
+}, () => {
+  log(`serving on http://127.0.0.1:${port}`);
+});
+
 })();
