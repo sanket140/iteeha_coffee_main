@@ -66,3 +66,5 @@ export const galleryImages: GalleryImage[] = [
     aspectRatio: "aspect-[3/4]"
   }
 ];
+
+export const homeGalleryImages = galleryImages.slice(0, 6); // Show first 6 on homepage

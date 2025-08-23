@@ -69,7 +69,7 @@ export default function Navigation() {
                 Contact
               </a>
               <a 
-                href="/order" 
+                href="/order-landing" 
                 className="bg-coffee-brown text-white px-6 py-2 rounded-full font-medium hover:bg-coffee-dark transition-colors duration-300"
                 data-testid="nav-order-now"
               >
@@ -129,9 +129,10 @@ export default function Navigation() {
                     Contact
                   </a>
                   <a 
-                    href="/order" 
+                    href="/order-landing" 
                     className="mx-3 mt-4 bg-coffee-brown text-white px-4 py-3 rounded-full text-center font-medium block"
                     data-testid="mobile-nav-order-now"
+                    onClick={() => setIsOpen(false)}
                   >
                     Order Now
                   </a>

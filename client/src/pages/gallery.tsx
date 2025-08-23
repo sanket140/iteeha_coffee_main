@@ -139,7 +139,7 @@ export default function Gallery() {
               </svg>
             </a>
             <a 
-              href="/order" 
+              href="/order-landing" 
               className="inline-flex items-center bg-transparent border-2 border-coffee-gold text-coffee-gold px-8 py-4 rounded-full font-inter font-semibold text-lg hover:bg-coffee-gold hover:text-white transition-all duration-300 transform hover:scale-105"
               data-testid="gallery-order-button"
             >

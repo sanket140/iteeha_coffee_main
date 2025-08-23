@@ -17,22 +17,8 @@ export default function StorySection() {
             </div>
             
             <div className="prose prose-lg max-w-none" data-testid="story-content">
-              <p className="text-charcoal text-lg leading-relaxed mb-6">
-                As a cozy café in the heart of Mumbai, we are a quiet spot for you amidst the city's turmoil. 
-                With our thoughtfully curated range of coffees, bakes, artisanal teas, freshly cold-pressed 
-                juices and premium sandwiches, Iteeha Coffee is your space to unwind.
-              </p>
-              
-              <p className="text-charcoal text-lg leading-relaxed mb-6">
-                <span className="font-semibold text-coffee-brown">"Iteeha"</span> roughly translates to <em>'as per tradition'</em>, and keeping that in mind, we adopted the virtue of doing <strong>'Basic but Beautiful'</strong>. We offer light and simple products, but beautifully done.
-              </p>
-              
-              <p className="text-charcoal text-lg leading-relaxed mb-6">
-                We understand the importance of a well-made cup of coffee, and hence focus immensely on sourcing just the right beans, training our staff continually, and equipping our cafes with the best machines.
-              </p>
-              
               <p className="text-charcoal text-lg leading-relaxed mb-8">
-                Tie that in with our warm service and you've got yourself an experience that will keep you coming back for more. Iteeha Coffee is a sanctuary for all those that are seeking a comforting cuppa and a moment to pause and reflect.
+                <span className="font-semibold text-coffee-brown">"Iteeha"</span> roughly translates to <em>'as per tradition'</em>, and keeping that in mind, we adopted the virtue of doing <strong>'Basic but Beautiful'</strong>. We offer light and simple products, but beautifully done. We understand the importance of a well-made cup of coffee, and hence focus immensely on sourcing just the right beans, training our staff continually, and equipping our cafes with the best machines. Tie that in with our warm service and you've got yourself an experience that will keep you coming back for more. Iteeha Coffee is a sanctuary for all those that are seeking a comforting cuppa and a moment to pause and reflect.
               </p>
             </div>
             

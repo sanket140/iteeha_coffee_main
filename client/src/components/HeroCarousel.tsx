@@ -7,21 +7,31 @@ export default function HeroCarousel() {
   const slides = [
     {
       id: 0,
-      image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
+      image: "https://iteeha.coffee/images/vfx.png",
       title: "Coffee. Craft. Conversations.",
-      subtitle: "Where tradition meets innovation in every carefully crafted cup"
+      subtitle: "",
+      isLogo: true
     },
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
+      image: "https://iteeha.coffee/images/urmi.jpg",
       title: "Step in, relax,",
-      subtitle: "Experience the art of coffee making in our welcoming space"
+      subtitle: "",
+      isLogo: false
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
-      title: "Let us take care of the rest.",
-      subtitle: "Your sanctuary for comfort, quality, and community"
+      image: "https://iteeha.coffee/images/e6.jpg",
+      title: "And",
+      subtitle: "",
+      isLogo: false
+    },
+    {
+      id: 3,
+      image: "https://iteeha.coffee/images/e2.jpg",
+      title: "let us take care of the rest.",
+      subtitle: "",
+      isLogo: false
     }
   ];
 
@@ -45,14 +55,24 @@ export default function HeroCarousel() {
             />
             <div className="absolute inset-0 bg-black/40" />
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="font-inter font-bold text-5xl md:text-7xl text-white mb-6 animate-fade-in">
-                {slide.title}
-              </h1>
-              <p className="text-xl md:text-2xl text-coffee-cream mb-8 max-w-2xl mx-auto animate-slide-up">
-                {slide.subtitle}
-              </p>
+              {slide.isLogo ? (
+                <div className="flex flex-col items-center">
+                  <img 
+                    src={slide.image} 
+                    alt="Iteeha Coffee Logo" 
+                    className="h-32 md:h-48 w-auto mb-8 animate-fade-in"
+                  />
+                  <h1 className="font-inter font-bold text-5xl md:text-7xl text-white mb-8 animate-fade-in">
+                    {slide.title}
+                  </h1>
+                </div>
+              ) : (
+                <h1 className="font-inter font-bold text-5xl md:text-7xl text-white mb-8 animate-fade-in">
+                  {slide.title}
+                </h1>
+              )}
               <a 
-                href="https://order.iteeha.coffee/" 
+                href="/order-landing" 
                 className="inline-block bg-coffee-gold text-white px-8 py-4 rounded-full font-inter font-semibold text-lg hover:bg-coffee-brown transition-all duration-300 transform hover:scale-105 animate-float"
                 data-testid="hero-order-button"
               >

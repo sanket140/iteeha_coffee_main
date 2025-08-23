@@ -113,7 +113,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="/order" 
+                  href="/order-landing" 
                   className="text-coffee-cream/80 hover:text-coffee-gold transition-colors duration-300"
                   data-testid="footer-link-order"
                 >
